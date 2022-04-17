@@ -2,13 +2,11 @@ name: 918+ 7.1.0
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - "docker/**"
-      - "**.sh"
-      - "**.json"
+   inputs:
+      clean_cache:
+        description: 'Clear caches'
+        required: false
+        type: boolean  
 
 jobs:
   build:
