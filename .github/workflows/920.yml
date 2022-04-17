@@ -61,9 +61,9 @@ jobs:
         run: |
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json
           
-      - name: 添加 jumkey.dtb !!!Create your own device tree binary!!!
+      - name: 添加 ds920p.dtb 
         run: |
-          ./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-dtb.json
+          ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-dtb.json
           echo '!!!Create your own device tree binary!!!'
           echo 'see https://github.com/jumkey/redpill-load/blob/develop/redpill-dtb/README.md'
           
