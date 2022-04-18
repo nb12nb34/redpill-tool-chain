@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "name": "install_rd.sh",
+      "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/releases/install_rd.sh",
+      "sha256": "41a626b6af537240727e059da14a225fda7c78904fcbdc9b457a8cbf84d95a3a",
+      "packed": false
+    },
+    {
+      "name": "install.sh",
+      "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/releases/install.sh",
+      "sha256": "22e49bc661e1789af2634346fb1dd587dd00cc3ace9d91de9abfe3f77a371c39",
+      "packed": false
+    },
+    {
+      "name": "model_ds920p.dtb",
+      "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-dtb/model_ds920p.dtb",
+      "sha256": "36683a8714d594eb382fc6ebd8e4132c0b9f99d0d54aa3a09f889f84cc75d4a5",
+      "packed": false
+    },
+    {
+      "name": "dtc",
+      "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/releases/dtc",
+      "sha256": "14f7f87a5822050eab7c30a064912a6efe99f49bf6b896bbb38c2ba003803e78",
+      "packed": false
+    }
+  ],
+  "scripts": {
+    "on_boot": "install_rd.sh",
+    "on_os_load": "install.sh"
+  }
+}
