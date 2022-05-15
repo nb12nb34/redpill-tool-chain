@@ -1,4 +1,4 @@
-name: 920-7.1
+name: b360itx-920-7.1
 
 on:
   workflow_dispatch:
