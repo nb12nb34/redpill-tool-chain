@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -eu
 
+BRP_DEBUG=${BRP_DEBUG:-0}
+if [ "${BRP_DEBUG}" -eq 1 ]; then
+  env
+fi
+
 if [ $# -eq 0 ];then
     git -C ${REDPILL_LKM_SRC} fetch
     git -C ${REDPILL_LOAD_SRC} fetch
