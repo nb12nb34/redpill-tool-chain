@@ -99,6 +99,7 @@ function runContainer(){
             BINDS+="--volume $(realpath ${HOST_PATH}):${CONTAINER_PATH} "
         done
     fi
+    BINDS+="--volume $(realpath docker/helper.sh):/opt/helper.sh "
     docker run --privileged --rm  $( [ "${CMD}" == "run" ] && echo " --interactive") --tty \
         --name redpill-tool-chain \
         --hostname redpill-tool-chain \
@@ -107,6 +108,8 @@ function runContainer(){
         $( [ "${LOCAL_RP_LOAD_USE}" == "true" ] && echo "--volume $(realpath ${LOCAL_RP_LOAD_PATH}):/opt/redpill-load") \
         $( [ "${LOCAL_RP_LKM_USE}" == "true" ] && echo "--volume $(realpath ${LOCAL_RP_LKM_PATH}):/opt/redpill-lkm") \
         $( [ -e "${USER_CONFIG_JSON}" ] && echo "--volume $(realpath ${USER_CONFIG_JSON}):/opt/redpill-load/user_config.json") \
+        $( [ "${BUILD_LOADER_JUN_MOD}" == "1" ] && echo "--env BRP_JUN_MOD=1") \
+        $( [ "${BUILD_LOADER_DEBUG}" == "1" ] && echo "--env BRP_DEBUG=1") \
         --volume ${REDPILL_LOAD_CACHE}:/opt/redpill-load/cache \
         --volume ${REDPILL_LOAD_IMAGES}:/opt/redpill-load/images \
         --env REDPILL_LKM_MAKE_TARGET=${REDPILL_LKM_MAKE_TARGET} \
@@ -312,6 +315,9 @@ if [[ "${ACTION}" != "del" && "${ACTION}" != "add" && "${ACTION}" != "sn" && "${
     REDPILL_LKM_BRANCH=$(getValueByJsonPath ".redpill_lkm.branch" "${BUILD_CONFIG}")
     REDPILL_LOAD_REPO=$(getValueByJsonPath ".redpill_load.source_url" "${BUILD_CONFIG}")
     REDPILL_LOAD_BRANCH=$(getValueByJsonPath ".redpill_load.branch" "${BUILD_CONFIG}")
+
+    BUILD_LOADER_JUN_MOD=$(getValueByJsonPath ".build_env.jun_mod" "${BUILD_CONFIG}")
+    BUILD_LOADER_DEBUG=$(getValueByJsonPath ".build_env.debug" "${BUILD_CONFIG}")
 
     EXTRACTED_KSRC="/linux*"
     if [ "${COMPILE_WITH}" == "toolkit_dev" ]; then
