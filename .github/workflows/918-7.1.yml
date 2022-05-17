@@ -18,7 +18,7 @@ jobs:
         include:
           #  两行一组，删除不需要的版本
           - platform: ds918p
-            version: 7.0.1-42218
+            version: 7.0.1-42661
 
     steps:
       - name: 检出项目文件
