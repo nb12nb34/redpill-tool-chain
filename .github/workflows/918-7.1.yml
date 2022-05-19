@@ -1,13 +1,12 @@
-name: 918+ 7.1.0
+name: ds918 7.1
 
 on:
   workflow_dispatch:
-   inputs:
+    inputs:
       clean_cache:
         description: 'Clear caches'
         required: false
-        type: boolean  
-
+        type: boolean
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,37 +15,60 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          #  两行一组，删除不需要的版本
           - platform: ds918p
-            version: 7.0.1-42661
+            version: 7.1.0-42661
 
     steps:
       - name: 检出项目文件
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
+      - name: 缓存加速
+        uses: actions/cache@v3
+        with:
+          path: |
+            cache/*.pat
+            cache/*.org
+            docker/downloads/*.txz
+          key: ${{matrix.platform}}-${{matrix.version}}-${{ hashFiles('global_config.json') }}
+          restore-keys: ${{matrix.platform}}-${{matrix.version}}-
+
+      - name: 清理缓存
+        if: "${{ github.event.inputs.clean_cache == 'true' }}"
+        run: |
+          rm -rf cache/*.pat
+          rm -rf cache/*.org
+          rm -rf docker/downloads/*.txz
+      
       - name: 准备构建环境
         run: |
           ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
-          
+     
       - name: 配置引导镜像
         run: |
           cat ${{matrix.platform}}_user_config.json
-          
-      - name: 添加扩展驱动
-        run: |
-          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json 
-          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/e1000e/rpext-index.json
-   
+     
       - name: 添加 Misc shell
         run: |
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json
-    
+          
+      - name: 添加扩展驱动
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json 
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/e1000e/rpext-index.json
+          
+      - name: 预处理PAT
+        if: endsWith(matrix.version, '42661') && startsWith(matrix.platform, 'ds361')
+        run: |
+          sed -i 's/debian:8-slim/debian:10-slim/g' global_config.json
+          ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
+          ./redpill_tool_chain.sh pat ${{matrix.platform}}-${{matrix.version}}
+          sed -i 's/debian:10-slim/debian:8-slim/g' global_config.json
+          ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
+          
       - name: 编译引导镜像
         run: |
           ./redpill_tool_chain.sh auto ${{matrix.platform}}-${{matrix.version}}
-          
       - name: 上传引导镜像到 github actions
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: dsm-${{matrix.platform}}-${{matrix.version}}
           path: images/redpill-*.img
@@ -55,7 +77,5 @@ jobs:
       - name: 删除旧的工作流
         uses: Mattraks/delete-workflow-runs@v2
         with:
-          token: ${{ github.token }}
-          repository: ${{ github.repository }}
-          retain_days: 3
-          keep_minimum_runs: 6
+          retain_days: 1
+          keep_minimum_runs: 3
