@@ -1,4 +1,4 @@
-name: ds918 7.1
+name: ds918-7.1
 
 on:
   workflow_dispatch:
