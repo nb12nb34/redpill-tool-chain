@@ -3,13 +3,13 @@
     {
       "name": "install_rd.sh",
       "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/releases/install_rd.sh",
-      "sha256": "41a626b6af537240727e059da14a225fda7c78904fcbdc9b457a8cbf84d95a3a",
+      "sha256": "8de2386d48befda1c1301e7b2647ff6dae63cea9bcb28de3b6bd9a4185d5a734",
       "packed": false
     },
     {
       "name": "install.sh",
       "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/releases/install.sh",
-      "sha256": "22e49bc661e1789af2634346fb1dd587dd00cc3ace9d91de9abfe3f77a371c39",
+      "sha256": "1f93a2f295e892ff1755327cef0b308c3b005e8f49e95b765aa35992f18bbf77",
       "packed": false
     },
     {
