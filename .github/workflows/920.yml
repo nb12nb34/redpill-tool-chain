@@ -1,4 +1,4 @@
-name: b360itx-920
+name: b360itx-920-42661
 
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
       matrix:
         include:
           - platform: ds920p
-            version: 7.0.1-42218
+            version: 7.1.0-42661
             
 
     steps:
