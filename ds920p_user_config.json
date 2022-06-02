@@ -1,5 +1,25 @@
 {
-    "extra_cmdline": {
+  "os": {
+    "id": "ds920p_42218",
+    "pat_url": "https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_DS920%2B_42218.pat",
+    "sha256": "73053911bd118b432d5a2036dc62d518eed83b78b32c1eb23696d59725a14892"
+  },
+
+  "files": {
+    "zlinux": {
+      "name": "zImage",
+      "sha256": "74d513aaa3e30d8aa4f80e202d94a68a552e9c0472f8470e133ad29080556f55"
+    },
+    "ramdisk": {
+      "name": "rd.gz",
+      "sha256": "e39890f4bef2e5e4eea956996b0dd92d081c6d9e7c393331131e65bbad1a17a9"
+    },
+    "vmlinux": {
+      "sha256": "84e5e1a238e73ffe2ccf08d51e3f9ad13385fcdcac18163678de3f6ad1447bc4"
+    },  
+
+  
+  "extra_cmdline": {
         "pid": "0x5571",
         "vid": "0x0781",
         "sn": "1234PDN251100",
