@@ -438,6 +438,10 @@
       "redpill_load": {
         "source_url": "https://github.com/pocopico/redpill-load.git",
         "branch": "develop"
+      },
+      "build_env": {
+        "jun_mod": 1,
+        "debug": 0
       }
     },
     {
