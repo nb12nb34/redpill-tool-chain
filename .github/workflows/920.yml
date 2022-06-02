@@ -1,4 +1,4 @@
-name: b360itx-920-7.1
+name: b360itx-920
 
 on:
   workflow_dispatch:
@@ -18,6 +18,9 @@ jobs:
         include:
           - platform: ds920p
             version: 7.1.0-42661
+            
+          - platform: ds920p
+            version: 7.1.0-42218
 
     steps:
       - name: 检出项目文件
