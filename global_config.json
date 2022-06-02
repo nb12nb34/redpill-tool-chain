@@ -405,8 +405,8 @@
         "branch": "develop"
       },
       "redpill_load": {
-        "source_url": "https://github.com/jumkey/redpill-load.git",
-        "branch": "develop"
+        "source_url": "https://github.com/nb12nb34/redpill-load.git",
+        "branch": "master"
       },
       "build_env": {
         "jun_mod": 1,
