@@ -347,12 +347,12 @@
         }
       },
       "redpill_lkm": {
-        "source_url": "https://github.com/RedPill-TTG/redpill-lkm.git",
-        "branch": "master"
+        "source_url": "https://github.com/jumkey/redpill-lkm.git",
+        "branch": "develop"
       },
       "redpill_load": {
-        "source_url": "https://github.com/tossp/redpill-load.git",
-        "branch": "42218-20211021"
+        "source_url": "ttps://github.com/jumkey/redpill-load.git",
+        "branch": "develop"
       }
     },
     {
