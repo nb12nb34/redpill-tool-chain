@@ -14,10 +14,6 @@
       "name": "rd.gz",
       "sha256": "e39890f4bef2e5e4eea956996b0dd92d081c6d9e7c393331131e65bbad1a17a9"
     },
-    "vmlinux": {
-      "sha256": "84e5e1a238e73ffe2ccf08d51e3f9ad13385fcdcac18163678de3f6ad1447bc4"
-    },  
-
   
   "extra_cmdline": {
         "pid": "0x5571",
