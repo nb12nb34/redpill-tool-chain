@@ -49,7 +49,7 @@ jobs:
             cache/*.pat
             cache/*.org
             docker/downloads/*.txz
-          key: ${{matrix.platform}}-${{matrix.version}}-${{ hashFiles('global_config.json') }}
+          key: ${{matrix.platform}}-${{matrix.version}}-${{ hashFiles('global_config_jun.json') }}
           restore-keys: ${{matrix.platform}}-${{matrix.version}}-
 
       - name: 清理缓存
