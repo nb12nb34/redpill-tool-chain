@@ -1,4 +1,4 @@
-name: b360itx-920-42661
+name: ds920+
 
 on:
   workflow_dispatch:
@@ -17,8 +17,9 @@ jobs:
       matrix:
         include:
           - platform: ds920p
-            version: 7.1.0-42661
-            
+            version: 7.0.1-42218
+         - platform: ds920p
+            version: 7.1.0-42661   
 
     steps:
       - name: 检出项目文件
@@ -58,9 +59,9 @@ jobs:
           
       - name: 添加 ds920p.dtb 
         run: |
-          #./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-dtb.json
+          ./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-dtb.json
           # 添加自定义dtb文件，支持4盘位以上硬盘
-          ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/rpext-index.json
+          #./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/rpext-index.json
           # 添加jumkey dtb文件
           
       - name: 预处理PAT
