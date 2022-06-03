@@ -50,12 +50,7 @@ jobs:
           
       - name: 添加 Misc shell
         run: |
-          ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json
-          
-      - name: 添加 jumkey dtb
-        run: |
-          ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-runtime-qjs/rpext-index.json
-          ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/rpext-index.json 
+          ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json          
                             
       - name: 添加扩展驱动
         run: |
