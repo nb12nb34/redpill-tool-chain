@@ -17,7 +17,7 @@ function checkPreconditon(){
 checkPreconditon
 
 function readConfig() {
-    cat global_config.json
+    cat global_config_jun.json
 }
 
 function getValueByJsonPath(){
