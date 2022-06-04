@@ -2,14 +2,14 @@
     "extra_cmdline": {
         "pid": "0x5571",
         "vid": "0x0781",
-        "sn": "1234PDN251100",
+        "sn": "2040SBRD42CP2",
         "netif_num": "2",
-         "mac1": "001132001122",
-         "mac2": "001132Ef0245"
+         "mac1": "001132CABFFF",
+         "mac2": "001132CAC000"
     },
     "synoinfo": {
       "maxdisks": "24",
-      "maxlanport": "4",
+      "maxlanport": "6",
       "usbportcfg": "0x30000",
        "esataportcfg": "0x0",
        "internalportcfg": "0xffff"
