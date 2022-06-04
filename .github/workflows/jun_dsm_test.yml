@@ -16,22 +16,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          #  两行一组，删除不需要的版本
-          - platform: ds1621p
-            version: 7.0.1-42218
-
-          - platform: ds3615xs
-            version: 7.0.1-42218
-
-          - platform: ds3617xs
-            version: 7.0.1-42218
-
-          - platform: ds3622xsp
-            version: 7.0.1-42218
-
-          - platform: ds918p
-            version: 7.0.1-42218
-
           - platform: ds920p
             version: 7.0.1-42218
 
@@ -84,17 +68,27 @@ jobs:
         run: |
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json 
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/e1000e/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/ixgbe/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/ixgbevf/rpext-index.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8168/rpext-index.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8169/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/rpext-index.json
 
       - name: 添加 Misc shell
         run: |
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json
 
-      - name: 添加 jumkey.dtb !!!Create your own device tree binary!!!
+      - name: 添加 model.dtb
         if: matrix.platform == 'ds920p' || matrix.platform == 'ds1621p' || matrix.platform == 'ds2422p'
         run: |
-          ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-dtb.json
+          #./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-dtb.json
+          # 添加自定义dtb文件，支持4盘位以上硬盘
+          #./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/rpext-index.json
+          # 添加jumkey dtb文件
+          
+          ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-runtime-qjs/rpext-index.json
+          ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/rpext-index.json 
+           # 添加jumkey dtb文件,使用js重构redpill-dtb，文件大小约为600K
 
       - name: 预处理PAT
         if: endsWith(matrix.version, '42661') && startsWith(matrix.platform, 'ds361')
