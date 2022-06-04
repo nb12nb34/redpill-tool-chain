@@ -1,6 +1,6 @@
 {
   "id": "pocopico.mlx4_core",
-  "url": "https://github.com/nb12nb34/redpill-tool-chain/master/rpext-index.json",
+  "url": "https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/rpext-index.json",
   "info": {
     "name": "mlx4_core",
     "description": "Adds  Support",
