@@ -70,14 +70,6 @@ jobs:
           #./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/rpext-index.json 
            # 添加jumkey dtb文件,使用js重构redpill-dtb，文件大小约为600K
           
-      - name: 预处理PAT
-        if: endsWith(matrix.version, '42661') && startsWith(matrix.platform, 'ds361')
-        run: |
-          sed -i 's/debian:8-slim/debian:10-slim/g' global_config.json
-          ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
-          ./redpill_tool_chain.sh pat ${{matrix.platform}}-${{matrix.version}}
-          sed -i 's/debian:10-slim/debian:8-slim/g' global_config.json
-          ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
           
       - name: 编译引导镜像
         run: |
