@@ -2,7 +2,7 @@
   "files": [
     {
       "name": "install_rd.sh",
-      "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/releases/install_rd.sh",
+      "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-dtb/releases/install_rd.sh",
       "sha256": "8de2386d48befda1c1301e7b2647ff6dae63cea9bcb28de3b6bd9a4185d5a734",
       "packed": false
     },
