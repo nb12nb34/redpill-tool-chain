@@ -1,6 +1,6 @@
 {
   "id": "redpill-dtb",
-  "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-qjs-dtb.json",
+  "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-qjsdtb.json",
   "info": {
     "name": "Device tree binary",
     "description": "Create your own device tree binary",
