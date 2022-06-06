@@ -9,7 +9,7 @@
     },
     "synoinfo": {
       "maxdisks": "24",
-      "maxlanport": "6",
+      "maxlanport": "4",
       "usbportcfg": "0x30000",
        "esataportcfg": "0x0",
        "internalportcfg": "0xffff"
