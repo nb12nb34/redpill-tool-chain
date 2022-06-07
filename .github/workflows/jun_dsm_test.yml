@@ -74,8 +74,9 @@ jobs:
           #./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/ixgbe/rpext-index.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/ixgbevf/rpext-index.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8168/rpext-index.json
-          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8169/rpext-index.json
-          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/rpext-index.json
+          #./redpill_tool_chain.sh add https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/tossp/redpill-tool-chain/master/extensions/redpill-virtio.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/jumkey/redpill-load/develop/redpill-acpid/rpext-index.json
 
       - name: 添加 Misc shell
         run: |
