@@ -1,4 +1,4 @@
-name: ds920-42218
+name: ds920
 
 on:
   workflow_dispatch:
