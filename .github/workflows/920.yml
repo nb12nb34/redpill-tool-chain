@@ -57,14 +57,14 @@ jobs:
           
       - name: 添加 ds920p.dtb 
         run: |
-          ./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-dtb.json
+          #./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-dtb.json
           # 添加自定义dtb文件，支持4盘位以上硬盘
           
           #./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/rpext-index.json
           # 添加jumkey dtb文件
                    
-          #./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-runtime-qjs/rpext-index.json
-          #./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/rpext-index.json 
+          ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-runtime-qjs/rpext-index.json
+          ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/rpext-index.json 
           # 添加jumkey dtb文件,使用js重构redpill-dtb，文件大小约为600K   
           
           #./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-qjsdtb.json
