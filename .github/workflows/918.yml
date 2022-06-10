@@ -56,6 +56,8 @@ jobs:
         run: |
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json 
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/e1000e/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/tossp/redpill-tool-chain/master/extensions/redpill-virtio.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/jumkey/redpill-load/develop/redpill-acpid/rpext-index.json
           
       - name: 编译引导镜像
         run: |
