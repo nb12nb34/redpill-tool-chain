@@ -2,25 +2,25 @@
   "files": [
     {
       "name": "install_rd.sh",
-      "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-dtb/releases/install_rd.sh",
+      "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-staticdtb/releases/install_rd.sh",
       "sha256": "41a626b6af537240727e059da14a225fda7c78904fcbdc9b457a8cbf84d95a3a",
       "packed": false
     },
     {
       "name": "install.sh",
-      "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/releases/install.sh",
+      "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-staticdtb/releases/install.sh",
       "sha256": "1f93a2f295e892ff1755327cef0b308c3b005e8f49e95b765aa35992f18bbf77",
       "packed": false
     },
     {
       "name": "dtc",
-      "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/releases/dtc",
+      "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-staticdtb/releases/dtc",
       "sha256": "14f7f87a5822050eab7c30a064912a6efe99f49bf6b896bbb38c2ba003803e78",
       "packed": false
     },
      {
       "name": "model_ds920p.dtb",
-      "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-dtb/releases/model_ds920p.dtb",
+      "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-staticdtb/releases/model_ds920p.dtb",
       "sha256": "6a276a95c439b837227e1fc6203a3079ad5dbd260fdd793f259780e9d7871b63",
       "packed": false
     }
