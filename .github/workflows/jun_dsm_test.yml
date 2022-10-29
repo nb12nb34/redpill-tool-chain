@@ -73,6 +73,7 @@ jobs:
         run: |
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json 
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/e1000e/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/igc/rpext-index.json  # intel 225/225 2.5g网卡驱动   
           #./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbe/rpext-index.json
           #./redpill_tool_chain.sh add https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/rp-ext/mlx4.json
           #./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/ixgbevf/rpext-index.json
