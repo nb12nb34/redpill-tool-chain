@@ -1,4 +1,4 @@
-name: 测试
+name: 构建
 
 on:
   workflow_dispatch:
@@ -7,6 +7,13 @@ on:
         description: 'Clear caches'
         required: false
         type: boolean
+  push:
+    branches:
+      - master
+    paths:
+      - "docker/**"
+      - "**.sh"
+      - "**.json"
 
 jobs:
   build:
@@ -16,6 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          #  两行一组，删除不需要的版本
           - platform: ds920p
             version: 7.0.1-42218
 
