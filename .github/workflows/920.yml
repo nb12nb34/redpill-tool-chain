@@ -74,6 +74,18 @@ jobs:
         run: |
           ./redpill_tool_chain.sh auto ${{matrix.platform}}-${{matrix.version}}
           
+      - name: 预处理PAT
+        if: endsWith(matrix.version, '42661') && startsWith(matrix.platform, 'ds361')
+        run: |
+          sed -i 's/debian:8-slim/debian:10-slim/g' global_config.json
+          ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
+          ./redpill_tool_chain.sh pat ${{matrix.platform}}-${{matrix.version}}
+          sed -i 's/debian:10-slim/debian:8-slim/g' global_config.json
+          ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
+      - name: 编译引导镜像
+        run: |
+          ./redpill_tool_chain.sh auto ${{matrix.platform}}-${{matrix.version}}
+          
       - name: 上传引导镜像到 github actions
         uses: actions/upload-artifact@v3
         with:
