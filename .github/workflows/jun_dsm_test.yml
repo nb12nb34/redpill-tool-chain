@@ -7,13 +7,7 @@ on:
         description: 'Clear caches'
         required: false
         type: boolean
-  push:
-    branches:
-      - master
-    paths:
-      - "docker/**"
-      - "**.sh"
-      - "**.json"
+
 
 jobs:
   build:
