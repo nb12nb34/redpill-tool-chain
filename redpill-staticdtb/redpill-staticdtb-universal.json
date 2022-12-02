@@ -21,7 +21,7 @@
      {
       "name": "model_ds920p.dtb",
       "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-staticdtb/releases/model_ds920p.dtb",
-      "sha256": "808f72451d11ed9199b480d962881f524d4b2f0b993dc91a50c92a1b7b4a4af0",
+      "sha256": "d4249924471f9aafa9ef138893e49be750916e90c2e84271cf063b1942831f73",
       "packed": false
     }
   ],
