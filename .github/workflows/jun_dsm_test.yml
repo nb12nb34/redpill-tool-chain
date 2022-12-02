@@ -57,7 +57,6 @@ jobs:
           cat ds920p_user_config.json
 
       - name: 添加扩展驱动
-        if: matrix.platform != 'dva3221'
         run: |
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/e1000e/rpext-index.json     
