@@ -1,4 +1,4 @@
-name: ds920
+name: ds920-tcrp
 
 on:
   workflow_dispatch:
