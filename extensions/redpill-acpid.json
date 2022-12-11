@@ -1,6 +1,6 @@
 {
   "id": "jumkey.acpid2",
-  "url": "https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-acpid.json",
+  "url": "https://github.com/pocopico/redpill-load/raw/develop/redpill-acpid/rpext-index.json",
   "info": {
     "name": "ACPI Daemon v2",
     "description": "ACPI Daemon v2 that handles power button events",
@@ -11,9 +11,13 @@
   "releases": {
     "ds3615xs_25556": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal_v6.json",
     "ds3615xs_41222": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds3615xs_42951": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds3615xs_42962": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds3615xs_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds3615xs_42621": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds3615xs_42661": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds3617xs_42951": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds3617xs_42962": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds3617xs_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds3617xs_42621": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds3617xs_42661": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
@@ -22,19 +26,28 @@
     "ds918p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds918p_42621": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds918p_42661": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds918p_42962": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds920p_42951": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds920p_42962": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds920p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds920p_42550": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds920p_42621": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds920p_42661": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
-    "ds920p_42962": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds1621p_42951": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds1621p_42962": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds1621p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds1621p_42621": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds1621p_42661": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds2422p_42951": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds2422p_42962": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds2422p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds2422p_42621": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds2422p_42661": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds3622xsp_42951": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
+    "ds3622xsp_42962": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds3622xsp_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds3622xsp_42621": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json",
     "ds3622xsp_42661": "https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/recipes/universal.json"
   }
 }
+
