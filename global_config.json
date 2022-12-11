@@ -455,7 +455,7 @@
     {
       "id": "ds920p-7.1.1-42962",
       "platform_version": "ds920p-7.1.1-42962",
-      "user_config_json": "geminilake_user_config.json",
+      "user_config_json": "ds920p_user_config.json",
       "docker_base_image": "debian:8-slim",
       "compile_with": "toolkit_dev",
       "redpill_lkm_make_target": "test-v7",
@@ -476,13 +476,7 @@
       "redpill_load": {
         "source_url": "https://github.com/pocopico/redpill-load.git",
         "branch": "develop"
-      },
-      "add_extensions": [
-        {
-          "dtbpatch": "https://github.com/pocopico/rp-ext/raw/main/dtbpatch/rpext-index.json",
-          "redpill-misc": "https://github.com/pocopico/redpill-load/raw/develop/redpill-misc/rpext-index.json"
-        }
-      ]
+      }
     },
     {
       "id": "dva3221-7.0.1-42218",
