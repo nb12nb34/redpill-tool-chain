@@ -1,6 +1,6 @@
 {
   "id": "jumkey.qjs.dtb",
-  "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-qjsdtb.json",
+  "url": ""https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-qjsdtb.json",
   "info": {
     "name": "Device tree binary",
     "description": "Create your own device tree binary",
@@ -9,10 +9,11 @@
     "help_url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb"
   },
   "releases": {
-    "ds920p_42218": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-qjsdtb/redpill-qjsdtb-universal.json",
-    "ds1621p_42218": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-qjsdtb/redpill-qjsdtb-universal.json",
-    "ds2422p_42218": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-qjsdtb/redpill-qjsdtb-universal.json",
-    "ds920p_42661": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-qjsdtb/redpill-qjsdtb-universal.json",
-    "ds920p_42962": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/redpill-qjsdtb/redpill-qjsdtb-universal.json"
+    "_": "https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/recipes/universal.json",
+    "ds920p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/recipes/universal.json",
+    "ds1621p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/recipes/universal.json",
+    "ds2422p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/recipes/universal.json",
+    "ds920p_42661": "https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/recipes/universal.json",
+    "ds920p_42962": "https://github.com/jumkey/redpill-load/raw/develop/redpill-qjs-dtb/recipes/universal.json"
   }
 }
