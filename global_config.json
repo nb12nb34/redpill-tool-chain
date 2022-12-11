@@ -454,9 +454,10 @@
     },
     {
       "id": "ds920p-7.1.1-42962",
-      "platform_version": "ds920p-7.1.1-42962",
+      "platform_name": "DS920+",
+      "platform_version": "geminilake-7.1.1-42962",
       "user_config_json": "ds920p_user_config.json",
-      "docker_base_image": "debian:8-slim",
+      "docker_base_image": "debian:10-slim",
       "compile_with": "toolkit_dev",
       "redpill_lkm_make_target": "test-v7",
       "downloads": {
