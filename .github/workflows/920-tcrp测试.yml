@@ -58,9 +58,10 @@ jobs:
           
       - name: 添加 ds920p.dtb 
         run: |        
+          ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/blob/develop/redpill-qjs-dtb/rpext-index.json
           # ./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-qjsdtb.json
          
-          ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/blob/develop/redpill-qjs-dtb/rpext-index.json
+          
           
       - name: 编译引导镜像
         run: |
