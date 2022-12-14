@@ -1,4 +1,4 @@
-name: ds920
+name: ds920-jun
 
 on:
   workflow_dispatch:
