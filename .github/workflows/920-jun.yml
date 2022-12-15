@@ -58,7 +58,9 @@ jobs:
           
       - name: 添加 ds920p.dtb 
         run: |
-          ./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-staticdtb.json
+          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/dtbpatch/rpext-index.json    
+          
+          # ./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-staticdtb.json
           # 添加自定义dtb文件，支持4盘位以上硬盘         
           
       - name: 编译引导镜像
