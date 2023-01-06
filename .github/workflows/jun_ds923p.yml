@@ -44,7 +44,7 @@ jobs:
           ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
       - name: 配置引导镜像
         run: |
-          cat ds920p_user_config.json
+          cat ds923p_user_config.json
           
       - name: 添加扩展驱动
         run: |
