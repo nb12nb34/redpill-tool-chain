@@ -1,0 +1,20 @@
+{
+    "extra_cmdline": {
+        "pid": "0x5571",
+        "vid": "0x0781",
+        "sn": "2040SBRD42CP2",
+        "netif_num": "2",
+         "mac1": "001132CABFFF",
+         "mac2": "001132CAC000"
+    },
+    "synoinfo": {
+      "maxdisks": "24",
+      "maxlanport": "4",
+      "usbportcfg": "0x30000",
+       "esataportcfg": "0x0",
+       "internalportcfg": "0xffff"
+    
+    },
+    "ramdisk_copy": {},
+    "extensions": []
+}
