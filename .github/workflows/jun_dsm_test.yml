@@ -19,7 +19,7 @@ jobs:
         include:
 
           - platform: ds923p
-            version: 7.0.1-42962
+            version: 7.1.1-42962
 
 
     steps:
