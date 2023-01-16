@@ -406,7 +406,7 @@
       "compile_with": "toolkit_dev",
       "redpill_lkm_make_target": "test-v7",
       "downloads": {
-        "kernel": {
+         "kernel": {
           "url": "https://sourceforge.net/projects/dsgpl/files/Synology%20NAS%20GPL%20Source/25426branch/geminilake-source/linux-4.4.x.txz/download",
           "sha256": "7a625433187269afa255be0382dad2ff27ff27fe3421e9b92d45a7e75653797a"
         },
