@@ -507,7 +507,7 @@
         "branch": "develop"
       },
       "redpill_load": {
-        "source_url": "https://github.com/jumkey/redpill-load.git",
+        "source_url": "https://github.com/nb12nb34/redpill-load.git",
         "branch": "develop"
       },
         "build_env": {
