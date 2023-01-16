@@ -421,7 +421,7 @@
       },
       "redpill_load": {
         "source_url": "https://github.com/nb12nb34/redpill-load.git",
-        "branch": "jun"
+        "branch": "develop"
       },
         "build_env": {
         "jun_mod": 1,
