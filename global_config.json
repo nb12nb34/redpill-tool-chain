@@ -502,13 +502,17 @@
           "sha256": "6dc6818bad28daff4b3b8d27b5e12d0565b65ee60ac17e55c36d913462079f57"
         }
       },
-      "redpill_lkm": {
-        "source_url": "https://github.com/pocopico/redpill-lkm.git",
-        "branch": "master"
+         "redpill_lkm": {
+        "source_url": "https://github.com/jumkey/redpill-lkm.git",
+        "branch": "develop"
       },
       "redpill_load": {
-        "source_url": "https://github.com/pocopico/redpill-load.git",
+        "source_url": "https://github.com/jumkey/redpill-load.git",
         "branch": "develop"
+      },
+        "build_env": {
+        "jun_mod": 1,
+        "debug": 0
       }
     },
     
