@@ -17,7 +17,7 @@ jobs:
       matrix:
         include:          
             
-          - platform: ds3615xs
+          - platform: ds3617xs
             version: 7.0.1-42218 
 
     steps:
