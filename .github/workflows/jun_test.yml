@@ -21,6 +21,9 @@ jobs:
             
           - platform: ds920p
             version: 7.1.1-42962
+            
+          - platform: ds3615p
+            version: 7.0.1-42218 
 
     steps:
       - name: 检出项目文件
