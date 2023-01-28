@@ -15,14 +15,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - platform: ds918p
-            version: 7.0.1-42218
+        include:          
             
-          - platform: ds920p
-            version: 7.1.1-42962
-            
-          - platform: ds3615p
+          - platform: ds3615xs
             version: 7.0.1-42218 
 
     steps:
