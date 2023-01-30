@@ -49,7 +49,7 @@ jobs:
       - name: 添加扩展驱动
         run: |
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json
-          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/e1000e/rpext-index.json     
+          #./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/e1000e/rpext-index.json     
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/redpill-load/develop/redpill-acpid/rpext-index.json
           
       - name: 添加 Misc shell
@@ -60,8 +60,8 @@ jobs:
         run: |
           ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/dtbpatch/rpext-index.json    
           
-          # ./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-staticdtb.json
-          # 添加自定义dtb文件，支持4盘位以上硬盘         
+          #./redpill_tool_chain.sh add https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-staticdtb.json
+          #添加自定义dtb文件，支持4盘位以上硬盘         
           
       - name: 编译引导镜像
         run: |
