@@ -1,6 +1,6 @@
 {
   "id": "dtbpatch",
-  "url": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/rpext-index.json",
+  "url": "https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/extensions/rp-dtbpatch.json",
   "info": {
     "name": "Device tree binary",
     "description": "Update device tree binary automatically on boot",
