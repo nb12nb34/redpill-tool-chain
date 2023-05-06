@@ -1,0 +1,35 @@
+{
+  "id": "dtbpatch",
+  "url": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/rpext-index.json",
+  "info": {
+    "name": "Device tree binary",
+    "description": "Update device tree binary automatically on boot",
+    "author_url": "https://github.com/pocopico/rp-ext/master/dtbpatch",
+    "packer_url": "https://github.com/pocopico/rp-ext/master/dtbpatch/",
+    "help_url": "https://github.com/pocopico/rp-ext/master/dtbpatch/"
+  },
+  "releases": {
+    "ds920p_42951": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds920p_42962": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds920p_42218": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds920p_42550": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds920p_42621": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds920p_42661": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds920p_64551": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds923p_42962": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "dva1622_42951": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "dva1622_42962": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "dva1622_42661": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds1621p_42951": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds1621p_42962": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds1621p_42218": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds1621p_42621": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds1621p_42661": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "sa6400_42962": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds2422p_42951": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds2422p_42218": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds2422p_42621": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds2422p_42661": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json",
+    "ds2422p_42962": "https://raw.githubusercontent.com/pocopico/rp-ext/master/dtbpatch/recipes/universal.json"
+  }
+}
