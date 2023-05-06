@@ -50,10 +50,10 @@ jobs:
           
       - name: 添加扩展驱动
         run: |
-          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/extensions/redpill-boot-wait.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/extensions/rpext-e1000e.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/extensions/rpext-8125.json
           # ./redpill_tool_chain.sh add https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/extensions/redpill-acpid.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/nb12nb34/redpill-tool-chain/master/extensions/redpill-boot-wait.json
           
       - name: 添加 Misc shell
         run: |
