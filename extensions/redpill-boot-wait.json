@@ -1,6 +1,6 @@
 {
   "id": "thethorgroup.boot-wait",
-  "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-boot-wait.json"
+  "url": "https://github.com/nb12nb34/redpill-tool-chain/raw/master/extensions/redpill-boot-wait.json",
   "info": {
     "name": "RedPill Bootwait",
     "description": "Simple extension which stops the execution early waiting for the boot device to appear",
