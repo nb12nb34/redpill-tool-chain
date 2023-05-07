@@ -470,7 +470,7 @@
           "sha256": "7a625433187269afa255be0382dad2ff27ff27fe3421e9b92d45a7e75653797a"
         },
         "toolkit_dev": {
-          "url": "https://sourceforge.net/projects/dsgpl/files/toolkit/DSM7.0/ds.geminilake-7.0.dev.txz/download",
+          "url": "https://sourceforge.net/projects/toolkit-me/files/ds.geminilake-7.2.dev.txz/download",
           "sha256": "544fbe3b8b6390af180163322864acb3f4a60cbb44f73ae1e79131f0693c6754"
         }
       },
@@ -491,7 +491,7 @@
 {
       "id": "ds920p-7.2.0-64551",
       "platform_name": "DS920+",
-      "platform_version": "geminilake-7.1.1-42962",
+      "platform_version": "geminilake-7.2.0-64551",
       "user_config_json": "ds920p_user_config.json",
       "docker_base_image": "debian:10-slim",
       "compile_with": "toolkit_dev",
