@@ -506,13 +506,13 @@
           "sha256": "d349fa644392d4cfab8191243ee38aaa32bd517208c144678e0c855cb5a619ea"
         }
       },
-      "redpill_lkm": {
-        "source_url": "https://github.com/PeterSuh-Q3/redpill-lkm.git",
+       "redpill_lkm": {
+        "source_url": "https://github.com/pocopico/redpill-lkm.git",
         "branch": "master"
       },
       "redpill_load": {
-        "source_url": "https://github.com/PeterSuh-Q3/redpill-load.git",
-        "branch": "master"
+        "source_url": "https://github.com/nb12nb34/redpill-load.git",
+        "branch": "develop"
       }
     },
     
