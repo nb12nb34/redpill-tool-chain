@@ -502,8 +502,8 @@
           "sha256": "7a625433187269afa255be0382dad2ff27ff27fe3421e9b92d45a7e75653797a"
         },
         "toolkit_dev": {
-          "url": "https://sourceforge.net/projects/dsgpl/files/toolkit/DSM7.0/ds.apollolake-7.0.dev.txz/download",
-          "sha256": "d349fa644392d4cfab8191243ee38aaa32bd517208c144678e0c855cb5a619ea"
+          "url": "https://sourceforge.net/projects/toolkit-me/files/ds.geminilake-7.2.dev.txz/download",
+          "sha256": "544fbe3b8b6390af180163322864acb3f4a60cbb44f73ae1e79131f0693c6754"
         }
       },
       "redpill_lkm": {
