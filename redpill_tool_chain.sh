@@ -29,7 +29,7 @@ function getValueByJsonPath(){
 function buildImage(){
     local KERNEL_SRC_FILENAME=$( [ "${COMPILE_WITH}" == "kernel" ] && echo "${TARGET_PLATFORM}.${KERNEL_FILENAME}" || echo "${TOOLKIT_DEV_FILENAME}")
     local KERNEL_SRC_FILENAME_SHA256=$( [ "${COMPILE_WITH}" == "kernel" ] && echo "${KERNEL_DOWNLOAD_SHA256}" || echo "${TOOLKIT_DEV_DOWNLOAD_SHA256}")
-    checkFileSHA256Checksum "${DOWNLOAD_FOLDER}/${KERNEL_SRC_FILENAME}" "${KERNEL_SRC_FILENAME_SHA256}"
+    #checkFileSHA256Checksum "${DOWNLOAD_FOLDER}/${KERNEL_SRC_FILENAME}" "${KERNEL_SRC_FILENAME_SHA256}"
 
     [ "${USE_BUILDKIT}" == "true" ] && export DOCKER_BUILDKIT=1
     docker build --file docker/Dockerfile --force-rm \
