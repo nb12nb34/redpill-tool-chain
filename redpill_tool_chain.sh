@@ -324,8 +324,6 @@ if [[ "${ACTION}" != "del" && "${ACTION}" != "add" && "${ACTION}" != "sn" && "${
         # TODO: fix: wait new toolkit
         if [ "${DSM_VERSION}" == "7.1" ]; then
             DSM_VERSION="7.0"
-        else
-            DSM_VERSION="7.2"
         fi
         EXTRACTED_KSRC="/usr/local/x86_64-pc-linux-gnu/x86_64-pc-linux-gnu/sys-root/usr/lib/modules/DSM-${DSM_VERSION}/build/"
     fi
